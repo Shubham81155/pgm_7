@@ -39,17 +39,11 @@ The app automatically adjusts its interface to best match the available display 
 ### 📱 Compact Screens (Single Pane Mode)
 On standard smartphones, the app presents a clean list of options. Selecting an item smoothly slides the full detail view over the list, complete with standard back gesture support to return to the shape selection index.
 
-<p align="center">
-  <img src="images/Screenshot 2026-09-17 104915.png" width="30%" alt="Shape Selection List" />
-  <img src="images/Screenshot 2026-09-17 104956.png" width="30%" alt="Shape Detail View" />
-</p>
+![Screenshot 2026-09-17 104915.png](images/Screenshot%202026-09-17%20104915.png)
+![Screenshot 2026-09-17 104956.png](images/Screenshot%202026-09-17%20104956.png)
 
 ### 📐 Wide Screens & Foldables (Dual Pane Mode)
 On large tablets, desktop modes, or unfolded screens, both panes remain visible side-by-side automatically, leveraging extra real estate to display list metadata and crisp high-definition geometric vector assets synchronously.
-
-<p align="center">
-  <img src="images/Screenshot 2026-09-17 105113.png" width="75%" alt="Dual Pane View 1" />
-  <img src="images/Screenshot 2026-09-17 105144.png" width="75%" alt="Dual Pane View 2" />
-</p>
-
+![Screenshot 2026-09-17 105144.png](images/Screenshot%202026-09-17%20105144.png)
+![Screenshot 2026-09-17 105113.png](images/Screenshot%202026-09-17%20105113.png)
 
