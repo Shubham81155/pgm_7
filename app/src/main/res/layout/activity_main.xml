@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/sliding_pane_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- The first child is the list pane. -->
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="?android:attr/windowBackground"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:padding="8dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- The second child is the detail pane. -->
+    <LinearLayout
+        android:id="@+id/detail_container"
+        android:layout_width="320dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#FAFAFA"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a Shape"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="24dp"
+            tools:src="@drawable/ic_circle"/>
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select a geometric shape from the left pane to explore its full details and attributes."
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="#555555"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>
